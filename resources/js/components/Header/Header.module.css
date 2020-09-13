@@ -1,0 +1,4 @@
+.header{
+    grid-area: headerGrid;
+    background-color: blue;
+}

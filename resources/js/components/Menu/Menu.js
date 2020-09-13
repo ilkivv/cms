@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import cssMenu from "./Menu.module.css";
+import {NavLink} from "react-router-dom";
 
-function Menu() {
+let Menu = () => {
     return (
-      <div>
+      <div className={cssMenu.menu}>
           Меню
-          {/*<Navlink to='/displays'>Дисплеи</Navlink>*/}
-          {/*<Navlink to='/touchscreens'>Тачскрины</Navlink>*/}
+          <NavLink to='/'>Главная</NavLink>
+          <NavLink to='/posts'>Посты</NavLink>
           {/*<NavLink to='/other'>Другое</NavLink>*/}
       </div>
     );

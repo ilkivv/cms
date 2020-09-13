@@ -4,15 +4,23 @@ import Home from "../../pages/Home/Home";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import Footer from "../Footer/Footer";
+import cssApp from "./App.module.css";
+import {BrowserRouter, Route} from "react-router-dom";
+import Posts from "../../pages/Posts/Posts";
 
-function App() {
+const App = () => {
     return (
-        <div className="container">
-            <Header />
-            <Menu />
-            <Home />
-            <Footer />
-        </div>
+        <BrowserRouter>
+            <div className={cssApp.app_wrapper}>
+                <Header />
+                <Menu />
+                <div className={cssApp.content}>
+                    <Route exact path='/' component={Home} />
+                    <Route exact path='/posts' component={Posts} />
+                </div>
+                <Footer />
+            </div>
+        </BrowserRouter>
     );
 }
 

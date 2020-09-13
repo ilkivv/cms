@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import cssHeader from "./Header.module.css";
 
-function Header() {
+let Header = () => {
     return (
-      <div>
+      <div className={cssHeader.header}>
           Шапка сайта
       </div>
     );

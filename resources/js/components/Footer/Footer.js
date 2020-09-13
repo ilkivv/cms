@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import cssFooter from "./Footer.module.css";
 
-function Footer() {
+let Footer = () => {
     return (
-      <div>
+      <div className={cssFooter.footer}>
           Футер
       </div>
     );
