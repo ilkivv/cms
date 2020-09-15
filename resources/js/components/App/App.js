@@ -7,8 +7,9 @@ import Footer from "../Footer/Footer";
 import cssApp from "./App.module.css";
 import {BrowserRouter, Route} from "react-router-dom";
 import Posts from "../../pages/Posts/Posts";
+import store from '../../redux/store';
 
-const App = () => {
+let App = () => {
     return (
         <BrowserRouter>
             <div className={cssApp.app_wrapper}>
@@ -24,9 +25,19 @@ const App = () => {
     );
 }
 
+let rerenderEntireTree = (state) => {
+    if (document.getElementById('root')) {
+        ReactDOM.render(<App state={state} dispath={}/>, document.getElementById('root'));
+    }
+}
+
+rerenderEntireTree(store.getState());
+
+store.subscribe(() =>{
+    let state = store.getState()
+    rerenderEntireTree(state);
+});
+
+
 
 export default App;
-
-if (document.getElementById('root')) {
-    ReactDOM.render(<App />, document.getElementById('root'));
-}
