@@ -6500,49 +6500,6 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/pages/Post/PostItem/PostItem.module.css":
-/*!**********************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/pages/Post/PostItem/PostItem.module.css ***!
-  \**********************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".resources-js-pages-Post-PostItem-__PostItem-module___19TKcVXUv6SZyPYNPuqdgx{\n    height: 100px;\n    width: 100px;\n}", ""]);
-
-// exports
-exports.locals = {
-	"img": "resources-js-pages-Post-PostItem-__PostItem-module___19TKcVXUv6SZyPYNPuqdgx"
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/pages/Posts/Posts.module.css":
-/*!***********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/pages/Posts/Posts.module.css ***!
-  \***********************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".resources-js-pages-Posts-__Posts-module___LbCfs_2MgCZoURRnUi-zA{\n\n}\n\n.resources-js-pages-Posts-__Posts-module___1xYdPIhUaCWWKDPVRpgIs1{\n    width: 100px;\n    height: 100px;\n}", ""]);
-
-// exports
-exports.locals = {
-	"item": "resources-js-pages-Posts-__Posts-module___LbCfs_2MgCZoURRnUi-zA",
-	"img": "resources-js-pages-Posts-__Posts-module___1xYdPIhUaCWWKDPVRpgIs1"
-};
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/lib/css-base.js":
 /*!*************************************************!*\
   !*** ./node_modules/css-loader/lib/css-base.js ***!
@@ -71392,7 +71349,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./App.module.css */ "./resources/js/components/App/App.module.css");
 /* harmony import */ var _App_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_App_module_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _pages_Posts_Posts__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../pages/Posts/Posts */ "./resources/js/pages/Posts/Posts.js");
+/* harmony import */ var _pages_Posts_PostsContainer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../pages/Posts/PostsContainer */ "./resources/js/pages/Posts/PostsContainer.js");
+/* harmony import */ var _pages_Posts_PostsContainer__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_pages_Posts_PostsContainer__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _redux_store__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../redux/store */ "./resources/js/redux/store.js");
 
 
@@ -71421,7 +71379,7 @@ var App = function App() {
     path: "/posts",
     render: function render() {
       /*#__PURE__*/
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_Posts_Posts__WEBPACK_IMPORTED_MODULE_8__["default"], null);
+      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostsContainer, null);
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
 };
@@ -71715,136 +71673,14 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./resources/js/pages/Post/PostItem/PostItem.js":
-/*!******************************************************!*\
-  !*** ./resources/js/pages/Post/PostItem/PostItem.js ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _PostItem_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PostItem.module.css */ "./resources/js/pages/Post/PostItem/PostItem.module.css");
-/* harmony import */ var _PostItem_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_PostItem_module_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-
-
-
-
-
-var PostItem = function PostItem(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: _PostItem_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.img,
-    src: props.src
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "props.text"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["NavLink"], {
-    to: "/posts/" + props.id
-  }, "\u0414\u0430\u043B\u0435\u0435"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (PostItem);
-
-/***/ }),
-
-/***/ "./resources/js/pages/Post/PostItem/PostItem.module.css":
-/*!**************************************************************!*\
-  !*** ./resources/js/pages/Post/PostItem/PostItem.module.css ***!
-  \**************************************************************/
+/***/ "./resources/js/pages/Posts/PostsContainer.js":
+/*!****************************************************!*\
+  !*** ./resources/js/pages/Posts/PostsContainer.js ***!
+  \****************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/postcss-loader/src??ref--6-2!./PostItem.module.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/pages/Post/PostItem/PostItem.module.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./resources/js/pages/Posts/Posts.js":
-/*!*******************************************!*\
-  !*** ./resources/js/pages/Posts/Posts.js ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Posts_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Posts.module.css */ "./resources/js/pages/Posts/Posts.module.css");
-/* harmony import */ var _Posts_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Posts_module_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _Post_PostItem_PostItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Post/PostItem/PostItem */ "./resources/js/pages/Post/PostItem/PostItem.js");
-
-
-
-
-
-
-var Posts = function Posts() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Post_PostItem_PostItem__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    id: "1",
-    text: "\u041A\u043E\u0442\u0438\u043A 1",
-    src: "https://vk.vkfaces.com/858416/v858416699/509d9/WYsLgRtHYy0.jpg"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Post_PostItem_PostItem__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    id: "2",
-    text: "\u041A\u043E\u0442\u0438\u043A 2",
-    src: "https://vk.vkfaces.com/858416/v858416699/509d9/WYsLgRtHYy0.jpg"
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Posts);
-
-/***/ }),
-
-/***/ "./resources/js/pages/Posts/Posts.module.css":
-/*!***************************************************!*\
-  !*** ./resources/js/pages/Posts/Posts.module.css ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/postcss-loader/src??ref--6-2!./Posts.module.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/pages/Posts/Posts.module.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /var/www/cms/resources/js/pages/Posts/PostsContainer.js: Unexpected token, expected \"{\" (4:0)\n\n\u001b[0m \u001b[90m 2 | \u001b[39m\u001b[36mimport\u001b[39m \u001b[33mReactDOM\u001b[39m from \u001b[32m'react-dom'\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 3 | \u001b[39m\u001b[36mimport\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    at Object._raise (/var/www/cms/node_modules/@babel/parser/lib/index.js:766:17)\n    at Object.raiseWithData (/var/www/cms/node_modules/@babel/parser/lib/index.js:759:17)\n    at Object.raise (/var/www/cms/node_modules/@babel/parser/lib/index.js:753:17)\n    at Object.unexpected (/var/www/cms/node_modules/@babel/parser/lib/index.js:8966:16)\n    at Object.expect (/var/www/cms/node_modules/@babel/parser/lib/index.js:8952:28)\n    at Object.parseNamedImportSpecifiers (/var/www/cms/node_modules/@babel/parser/lib/index.js:12895:10)\n    at Object.parseImport (/var/www/cms/node_modules/@babel/parser/lib/index.js:12803:39)\n    at Object.parseStatementContent (/var/www/cms/node_modules/@babel/parser/lib/index.js:11531:27)\n    at Object.parseStatement (/var/www/cms/node_modules/@babel/parser/lib/index.js:11431:17)\n    at Object.parseBlockOrModuleBlockBody (/var/www/cms/node_modules/@babel/parser/lib/index.js:12013:25)\n    at Object.parseBlockBody (/var/www/cms/node_modules/@babel/parser/lib/index.js:11999:10)\n    at Object.parseTopLevel (/var/www/cms/node_modules/@babel/parser/lib/index.js:11362:10)\n    at Object.parse (/var/www/cms/node_modules/@babel/parser/lib/index.js:13045:10)\n    at parse (/var/www/cms/node_modules/@babel/parser/lib/index.js:13098:38)\n    at parser (/var/www/cms/node_modules/@babel/core/lib/parser/index.js:54:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (/var/www/cms/node_modules/@babel/core/lib/transformation/normalize-file.js:99:38)\n    at normalizeFile.next (<anonymous>)\n    at run (/var/www/cms/node_modules/@babel/core/lib/transformation/index.js:31:50)\n    at run.next (<anonymous>)\n    at Function.transform (/var/www/cms/node_modules/@babel/core/lib/transform.js:27:41)\n    at transform.next (<anonymous>)\n    at step (/var/www/cms/node_modules/gensync/index.js:254:32)\n    at /var/www/cms/node_modules/gensync/index.js:266:13\n    at async.call.result.err.err (/var/www/cms/node_modules/gensync/index.js:216:11)");
 
 /***/ }),
 

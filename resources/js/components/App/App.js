@@ -6,7 +6,7 @@ import Menu from "../Menu/Menu";
 import Footer from "../Footer/Footer";
 import cssApp from "./App.module.css";
 import {BrowserRouter, Route} from "react-router-dom";
-import Posts from "../../pages/Posts/Posts";
+import Posts from "../../pages/Posts/PostsContainer";
 import store from '../../redux/store';
 
 let App = () => {
@@ -23,7 +23,7 @@ let App = () => {
                     } />
                     <Route path='/posts' render={
                         () => {
-                            <Posts />
+                            <PostsContainer />
                         }
                     } />
                 </div>
