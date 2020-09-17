@@ -16,8 +16,16 @@ let App = () => {
                 <Header />
                 <Menu />
                 <div className={cssApp.content}>
-                    <Route exact path='/' component={Home} />
-                    <Route exact path='/posts' component={Posts} />
+                    <Route extract path='/' render={
+                        () => {
+                            <Home />
+                        }
+                    } />
+                    <Route path='/posts' render={
+                        () => {
+                            <Posts />
+                        }
+                    } />
                 </div>
                 <Footer />
             </div>
@@ -27,7 +35,7 @@ let App = () => {
 
 let rerenderEntireTree = (state) => {
     if (document.getElementById('root')) {
-        ReactDOM.render(<App state={state} dispath={}/>, document.getElementById('root'));
+        ReactDOM.render(<App state={state} />, document.getElementById('root'));
     }
 }
 
