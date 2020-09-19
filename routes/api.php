@@ -23,6 +23,11 @@ Route::namespace('api\v1')->group(function (){
     Route::post('/posts', 'PostController@addPost');
     Route::put('/posts', 'PostController@updatePost');
     Route::delete('/posts', 'PostController@deletePost');
+
+    Route::get('/categories', 'HeaderController@getCategories');
+    Route::post('/categories', 'HeaderController@addCategory');
+    Route::put('/categories', 'HeaderController@updateCategory');
+    Route::delete('/categories', 'HeaderController@deleteCategory');
 });
 
 

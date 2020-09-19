@@ -24,4 +24,9 @@ class Post extends Model
     {
         return $this->create($params);
     }
+
+    public function deletePost($id)
+    {
+        return $this->find($id)->delete();
+    }
 }

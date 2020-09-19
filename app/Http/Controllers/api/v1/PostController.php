@@ -33,8 +33,12 @@ class PostController extends Controller
         return new JsonResponse(['post' => $post], 200);
     }
 
-    public function deletePost()
+    public function deletePost(Request $request, Post $postModel)
     {
-        
+
+        $params = $request->all();
+        $id = $params['id'];
+        $post = $postModel->deletePost($id);
+        return new JsonResponse(['post' => $post], 200);
     }
 }
